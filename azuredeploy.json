@@ -598,7 +598,7 @@
       "type": "string"
     },
     "targetEnvironment": {
-      "defaultValue": "AzurePublicCloud",
+      "defaultValue": "AzureChinaCloud",
       "metadata": {
         "description": "The azure deploy environment. Currently support: AzurePublicCloud, AzureChinaCloud"
       },
@@ -686,7 +686,11 @@
     "osImageOffer": "UbuntuServer",
     "osImagePublisher": "Canonical",
     "osImageSKU": "16.04-LTS",
+<<<<<<< HEAD
     "osImageVersion": "16.04.201705080",
+=======
+    "osImageVersion": "16.04.201703300",
+>>>>>>> 780370ac4e0bbe442c573939f33486c37495ca6d
     "sshKeyPath": "[concat('/home/', variables('adminUsername'), '/.ssh/authorized_keys')]",
     "sshRSAPublicKey": "[parameters('sshRSAPublicKey')]",
     "storageAccountBaseName": "[uniqueString(concat(variables('masterEndpointDNSNamePrefix'),variables('location'),variables('orchestratorName')))]",
