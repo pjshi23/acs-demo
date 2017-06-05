@@ -1,0 +1,50 @@
+{
+  "apiVersion": "vlabs",
+  "location": "chinaeast",
+  "properties": {
+    "orchestratorProfile": {
+      "orchestratorType": "DCOS",
+      "orchestratorVersion": "1.9.0"
+    },
+    "masterProfile": {
+      "count": 1,
+      "dnsPrefix": "standcos",
+      "vmSize": "Standard_D2",
+      "firstConsecutiveStaticIP": "172.16.0.5"
+    },
+    "agentPoolProfiles": [
+      {
+        "name": "agentprivate",
+        "count": 3,
+        "vmSize": "Standard_D2",
+        "osType": "Linux",
+        "availabilityProfile": "VirtualMachineScaleSets",
+        "storageProfile": "StorageAccount"
+      },
+      {
+        "name": "agentpublic",
+        "count": 3,
+        "vmSize": "Standard_D2",
+        "dnsPrefix": "standcagent",
+        "osType": "Linux",
+        "ports": [
+          80,
+          443,
+          8080
+        ],
+        "availabilityProfile": "VirtualMachineScaleSets",
+        "storageProfile": "StorageAccount"
+      }
+    ],
+    "linuxProfile": {
+      "adminUsername": "stan",
+      "ssh": {
+        "publicKeys": [
+          {
+            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4swPO/rpMYziYxbFXiEaxvZz00cSX4+JS+PAB97qNCEweW6hVHBl4+gFXAQHQR5buHzK4H5WxkqXVUcHQFg7m2PJ1gEmYGorJv+QSb9NRtshhPVez4NhALjBhD17qLvrJxqHvnnL3uLJ6tnf1u5dzJr7jhLd5sLrc6ewPB24hJ9JZe2gLv+o1HnkSSkgFWxiCAW9WIGgCqcgr3fFgKhP5NpxspCGEpkMxl+mVRai78kDfizW2fzhJE67Kf5ZpUkbelm3v+r7eEPgXSK/5qXjUAptsriEBsfMtu0sEk1r0F17oe/ia91+YuuT9QsU2v2RAGvpDK0/gUy205TJBPiOT stan@jumpbox"
+          }
+        ]
+      }
+    }
+  }
+}

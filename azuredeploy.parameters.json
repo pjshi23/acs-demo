@@ -1,0 +1,50 @@
+{
+  "agentprivateCount": {
+    "value": 3
+  },
+  "agentprivateSubnet": {
+    "value": "10.0.0.0/16"
+  },
+  "agentprivateVMSize": {
+    "value": "Standard_D2"
+  },
+  "agentpublicCount": {
+    "value": 3
+  },
+  "agentpublicEndpointDNSNamePrefix": {
+    "value": "standcagent"
+  },
+  "agentpublicSubnet": {
+    "value": "10.1.0.0/16"
+  },
+  "agentpublicVMSize": {
+    "value": "Standard_D2"
+  },
+  "dcosBootstrapURL": {
+    "value": ""
+  },
+  "firstConsecutiveStaticIP": {
+    "value": "172.16.0.5"
+  },
+  "linuxAdminUsername": {
+    "value": "stan"
+  },
+  "location": {
+    "value": "chinaeast"
+  },
+  "masterEndpointDNSNamePrefix": {
+    "value": "standcos"
+  },
+  "masterSubnet": {
+    "value": "172.16.0.0/24"
+  },
+  "masterVMSize": {
+    "value": "Standard_D2"
+  },
+  "sshRSAPublicKey": {
+    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4swPO/rpMYziYxbFXiEaxvZz00cSX4+JS+PAB97qNCEweW6hVHBl4+gFXAQHQR5buHzK4H5WxkqXVUcHQFg7m2PJ1gEmYGorJv+QSb9NRtshhPVez4NhALjBhD17qLvrJxqHvnnL3uLJ6tnf1u5dzJr7jhLd5sLrc6ewPB24hJ9JZe2gLv+o1HnkSSkgFWxiCAW9WIGgCqcgr3fFgKhP5NpxspCGEpkMxl+mVRai78kDfizW2fzhJE67Kf5ZpUkbelm3v+r7eEPgXSK/5qXjUAptsriEBsfMtu0sEk1r0F17oe/ia91+YuuT9QsU2v2RAGvpDK0/gUy205TJBPiOT stan@jumpbox"
+  },
+  "targetEnvironment": {
+    "value": "AzureChinaCloud"
+  }
+}
