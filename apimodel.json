@@ -1,10 +1,9 @@
 {
   "apiVersion": "vlabs",
-  "location": "chinaeast",
   "properties": {
     "orchestratorProfile": {
       "orchestratorType": "DCOS",
-      "orchestratorVersion": "1.9.0"
+      "orchestratorVersion": "1.8.4"
     },
     "masterProfile": {
       "count": 1,
